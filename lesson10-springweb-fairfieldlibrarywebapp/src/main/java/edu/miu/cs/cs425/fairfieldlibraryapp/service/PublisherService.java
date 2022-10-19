@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface PublisherService {
 
-    public abstract Iterable<Publisher> getPublishers();
+    public abstract List<Publisher> getPublishers();
     Publisher addNewPublisher(Publisher newPublisher);
     Publisher updatePublisher(Integer publisherId, Publisher editedPublisher);
     Publisher getPublisherById(Integer publisherId);

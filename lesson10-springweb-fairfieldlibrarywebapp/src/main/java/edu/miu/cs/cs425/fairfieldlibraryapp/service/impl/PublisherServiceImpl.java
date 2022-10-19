@@ -6,6 +6,8 @@ import edu.miu.cs.cs425.fairfieldlibraryapp.service.PublisherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PublisherServiceImpl implements PublisherService {
 
@@ -16,7 +18,7 @@ public class PublisherServiceImpl implements PublisherService {
     }
 
     @Override
-    public Iterable<Publisher> getPublishers() {
+    public List<Publisher> getPublishers() {
         return publisherRepository.findAll();
     }
 

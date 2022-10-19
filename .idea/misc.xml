@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/lesson9-jpa-fairfieldlibrarycliapp/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson10-springweb-fairfieldlibrarywebapp/pom.xml" />
       </list>
     </option>
   </component>

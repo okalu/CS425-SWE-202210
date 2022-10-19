@@ -48,6 +48,14 @@ public class Lesson9JpaFairfieldlibrarycliappApplication implements CommandLineR
         // Delete a publisher by the publisher
 //        publisherService.deletePublisherById(4);
 
+        // Using the NamedQuery
+        var pub = publisherService.findPublisherByName("Apress, Inc.");
+        if(pub != null) {
+            System.out.println(pub);
+        } else {
+            System.out.printf("Publisher with name, %s, is not found.\n", "Apress, Inc.");
+        }
+
         System.out.println("FairfieldLibrary CLI Application execution completed");
     }
 }

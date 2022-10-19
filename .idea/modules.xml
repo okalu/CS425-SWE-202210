@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CS425-SWE-202210.iml" filepath="$PROJECT_DIR$/CS425-SWE-202210.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson10-springweb-fairfieldlibrarywebapp/lesson10-springweb-fairfieldlibrarywebapp.iml" filepath="$PROJECT_DIR$/lesson10-springweb-fairfieldlibrarywebapp/lesson10-springweb-fairfieldlibrarywebapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson9-jpa-fairfieldlibrarycliapp/lesson9-jpa-fairfieldlibrarycliapp.iml" filepath="$PROJECT_DIR$/lesson9-jpa-fairfieldlibrarycliapp/lesson9-jpa-fairfieldlibrarycliapp.iml" />
     </modules>
   </component>

@@ -8,14 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lesson9-jpa-fairfieldlibrarycliapp" />
+        <module name="lesson10-springweb-fairfieldlibrarywebapp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="lesson10-springweb-fairfieldlibrarywebapp" target="17" />
       <module name="lesson9-jpa-fairfieldlibrarycliapp" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="lesson10-springweb-fairfieldlibrarywebapp" options="-parameters" />
       <module name="lesson9-jpa-fairfieldlibrarycliapp" options="-parameters" />
     </option>
   </component>

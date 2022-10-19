@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fairfield Library System - System Administration - Publishers</title>
+</head>
+<body>
+  <header th:replace="fragments/header :: header"></header>
+  <main>
+    <h1>System Administration</h1>
+    <nav>
+      <a href="/fairfieldlibrary/sysadmin/publisher/list">Manage Publishers</a> |
+      <a href="#">Manage Books</a> |
+      <a href="#">Manage Library Members</a>
+    </nav>
+    <h2>List of our Publishers</h2>
+    <section>
+      <table border="1" cellpadding="2em" cellspacing="0">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Publisher Name</th>
+            <th>Primary Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr th:each="publisher, counter : ${publishers}">
+            <th th:text="${counter.count}"></th>
+            <td th:text="${publisher.name}"></td>
+            <td th:if="${publisher.primaryAddress != null}">
+              <p>
+                <span th:text="${publisher.primaryAddress.street}"></span>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
